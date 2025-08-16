@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Sistema Web de Fútbol</title>
+<link rel="stylesheet" href="styles1.css" />
+</head>
+<body>
+<header>
+    <h1>Sistema Web de Fútbol</h1>
+</header>
+
+<!-- Menú principal con botones -->
+<nav class="main-nav">
+    <a href="inicio.html" class="btn-main">Inicio</a>
+    <a href="equipos.html" class="btn-main">Equipos</a>
+    <a href="https://streamtp11.com/eventos.html" target="_blank" class="btn-main">Partidos</a>
+    <a href="https://wa.me/906308439?text=Hola%2C%20quiero%20más%20información." target="_blank" class="btn-main">Contacto</a>
+</nav>
+
+<!-- Sección principal con imagen y texto -->
+<section class="hero">
+    <div class="hero-text">
+        <h2>Bienvenido al sistema de gestión de fútbol</h2>
+        <p>Consulta partidos, equipos y estadísticas en tiempo real.</p>
+        <a href="https://streamtp11.com/eventos.html" class="btn-ver-mas">Ver más</a>
+    </div>
+    <div class="hero-img">
+        <img src="C:\xampp\htdocs\deporte\GG.jpeg" alt="Fútbol" />
+              <img src="C:\xampp\htdocs\deporte\descarga (2).jpeg" alt="Fútbol" />
+                    <img src="C:\xampp\htdocs\deporte\hi.jpeg" alt="Fútbol" />
+    </div>
+</section>
+
+<!-- Contenido adicional oculto -->
+<div id="contenidoFutbol" class="hidden">
+  <h3>Historia del Fútbol</h3>
+  <p>El fútbol es uno de los deportes más populares del mundo. Surgió en el siglo XIX en Inglaterra y se ha convertido en una pasión global.</p>
+  <h3>Grandes Equipos</h3>
+  <p>Algunos de los equipos más exitosos incluyen el Real Madrid, Barcelona, Manchester United, y Bayern Múnich.</p>
+</div>
+
+<!-- Pie de página -->
+<footer>
+    <p>&copy; 2025 Sistema de Fútbol. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+  document.querySelector('.btn-ver-mas').addEventListener('click', () => {
+    document.getElementById('contenidoFutbol').classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>
